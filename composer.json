@@ -1,36 +1,38 @@
 {
-        "name": "buzzfishmedia/wp-site",
-        "description": "Use Composer to install new WordPress",
-        "license": "MIT",
-        "type": "wordpress-core",
-        "repositories": [
-                {
-                        "type": "composer",
-                        "url": "http://wpackagist.org"
-                },
-                {
-                        "type": "composer",
-                        "url": "http://satis.buzzfishmedia.com"
-                },
-                {
-                        "type":"composer",
-                        "url":"http://wpackagist.org"
-                }
-        ],
-        "config": {
-                "vendor-dir": "content/vendor"
-        },
-        "require": {
-                "composer/installers": "~1.0",
-                "johnpbloch/wordpress-core-installer": "dev-master",
-                "wordpress/wordpress": "3.8",
-                "wpackagist/contact-form-7": "*"
-        },
-        "extra": {
-                "wordpress-install-dir": "wp",
-                "installer-paths": {
-                        "content/plugins/{$name}/": ["type:wordpress-plugin"],
-                        "content/themes/{$name}/": ["type:wordpress-theme"]
-                }
-        }
+  "name": "buzzfishmedia/wordpress-site",
+  "description": "Use Composer to install new WordPress",
+  "license": "MIT",
+  "type": "wordpress-core",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://repos.fmccoy.info"
+    },
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "config": {
+    "vendor-dir": "content/vendor"
+  },
+  "require": {
+    "composer/installers": "~1.0",
+    "johnpbloch/wordpress-core-installer": "dev-master",
+    "wordpress/wordpress": "3.8.1",
+    "buzzfishmedia/tacklebox-child": "dev-master"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "pre-autoload-dump": [
+      "cp content/mu-plugins/wordpress-helpers/loader.php content/mu-plugins/loader-wordpress-helpers.php"
+    ]
+  }
 }
