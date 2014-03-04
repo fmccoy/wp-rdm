@@ -3,6 +3,7 @@
   "description": "Use Composer to install new WordPress",
   "license": "MIT",
   "type": "wordpress-core",
+  "version": "0.0.1",
   "repositories": [
     {
       "type": "composer",
