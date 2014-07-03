@@ -3,7 +3,7 @@
  Plugin Name: Composer Autoloader
  Plugin URI: #
  Description: Adds a the composer autoload.php
- Author: Frank McCoy
+ Author: Frank McCoy <frankmccoy.d@gmail.com>
  Version: 0.0.1
  Author URI: http://github.com/fmccoy/
  */

@@ -5,7 +5,7 @@
  * This is a config file from a composer generated WordPress site.
  *
  * @version 1.0
- * @author  Frank McCoy <fmccoy@thisisamg.com>
+ * @author  Frank McCoy <frankmccoy.d@gmail.com>
  * @package fmccoy/wp-site
  */
 

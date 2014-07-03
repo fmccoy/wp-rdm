@@ -1,5 +1,5 @@
 {
-  "name": "buzzfishmedia/wordpress-site",
+  "name": "fmccoy/wordpress-site",
   "description": "Use Composer to install new WordPress",
   "license": "MIT",
   "type": "wordpress-core",
@@ -7,7 +7,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://repos.fmccoy.info"
+      "url": "http://packages.fmccoy.info"
     },
     {
       "type": "composer",
@@ -20,10 +20,8 @@
   "require": {
     "composer/installers": "~1.0",
     "johnpbloch/wordpress-core-installer": "dev-master",
-    "wordpress/wordpress": "3.8.1",
-    "buzzfishmedia/wordpress-helpers": "dev-master",
-    "buzzfishmedia/tacklebox-framework": "dev-master",
-    "buzzfishmedia/tacklebox-child": "dev-master"
+    "wordpress/wordpress": "3.9",
+    "fmccoy/wordpress-helpers": "dev-master"
   },
   "extra": {
     "wordpress-install-dir": "wp",
