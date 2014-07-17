@@ -30,7 +30,7 @@
   "require": {
     "composer/installers": "~1.0",
     "johnpbloch/wordpress-core-installer": "dev-master",
-    "wordpress/wordpress": "3.9",
+    "wordpress/wordpress": "dev-master",
     "fmccoy/wordpress-helpers": "dev-master",
     "johdesign/bootstrap-theme": "dev-master"
   },
