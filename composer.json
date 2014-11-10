@@ -1,10 +1,10 @@
 {
-  "name": "fmccoy/wordpress-site",
+  "name": "fmccoy/wp-rdm",
   "description": "Use Composer to install new WordPress",
   "type": "wordpress-core",
-  "homepage": "https://github.com/fmccoy/wordpress-site",
+  "homepage": "https://github.com/fmccoy/wp-rdm",
   "license": "MIT",
-  
+
   "version": "0.0.1",
   "authors":  [
     {
@@ -31,8 +31,7 @@
     "composer/installers": "~1.0",
     "johnpbloch/wordpress-core-installer": "dev-master",
     "wordpress/wordpress": "dev-master",
-    "fmccoy/wordpress-helpers": "dev-master",
-    "johdesign/bootstrap-theme": "dev-master"
+    "fmccoy/wordpress-helpers": "dev-master"
   },
   "extra": {
     "wordpress-install-dir": "wp",
